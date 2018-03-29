@@ -1,20 +1,16 @@
 package cn.edots.slug.example.ui;
 
 import android.os.Bundle;
-import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import cn.edots.slug.annotation.BindLayout;
 import cn.edots.slug.example.R;
-import cn.edots.slug.example.controller.Test01Controller;
-import cn.edots.slug.example.controller.Test02Controller;
 import cn.edots.slug.example.databinding.ActivityMainBinding;
 import cn.edots.slug.example.model.ItemMainModel;
 import cn.edots.slug.example.model.MainModel;
 import cn.edots.slug.model.Holdable;
-import cn.edots.slug.model.Protocol;
 import cn.edots.slug.ui.BaseActivity;
 import cn.edots.slug.ui.adapter.HoldenAdapter;
 

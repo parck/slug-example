@@ -2,9 +2,9 @@ package cn.edots.slug.example.model;
 
 import android.view.View;
 
-import cn.edots.slug.example.R;
 import cn.edots.slug.example.controller.Test01Controller;
 import cn.edots.slug.example.controller.Test02Controller;
+import cn.edots.slug.example.databinding.ItemMainListBinding;
 import cn.edots.slug.example.ui.MainActivity;
 import cn.edots.slug.example.ui.TestActivity;
 import cn.edots.slug.model.Holdable;
@@ -17,13 +17,13 @@ import cn.edots.slug.ui.adapter.RecyclerViewAdapter;
  * @Description
  */
 
-public class ItemMainModel implements Holdable {
+public class ItemMainModel implements Holdable<ItemMainListBinding> {
 
     public String title;
 
     @Override
-    public void holding(final RecyclerViewAdapter.ViewHolder holder) {
-        holder.setText(R.id.item_title, title);
+    public void holding(final RecyclerViewAdapter.ViewHolder<ItemMainListBinding> holder) {
+        holder.getViewDataBinding().setItem(this);
         holder.setOnItemClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
