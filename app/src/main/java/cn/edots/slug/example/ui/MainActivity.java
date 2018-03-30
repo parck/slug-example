@@ -30,6 +30,9 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         e = new ItemMainModel();
         e.title = "testController02";
         holdables.add(e);
+        e = new ItemMainModel();
+        e.title = "testFragment";
+        holdables.add(e);
         viewDataBinding.recyclerView.setAdapter(new HoldenAdapter(this, R.layout.item_main_list, holdables));
     }
 }

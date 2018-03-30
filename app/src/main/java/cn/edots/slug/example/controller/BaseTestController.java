@@ -19,8 +19,10 @@ public class BaseTestController extends Controller<TestActivity, ActivityTestBin
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+        context.setCenterTitleContent("TestFragment");
         TestModel test = new TestModel();
         viewDataModel.setTest(test);
+        context.setCenterTitleContent("TestActivity");
         viewDataModel.titleText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

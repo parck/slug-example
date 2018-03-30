@@ -4,6 +4,7 @@ import cn.edots.slug.annotation.BindLayout;
 import cn.edots.slug.example.R;
 import cn.edots.slug.example.databinding.ActivityTestBinding;
 import cn.edots.slug.ui.BaseActivity;
+import cn.edots.slug.ui.TitleBarActivity;
 
 /**
  * @Author WETOOP
@@ -11,6 +12,6 @@ import cn.edots.slug.ui.BaseActivity;
  * @Description
  */
 @BindLayout(R.layout.activity_test)
-public class TestActivity extends BaseActivity<ActivityTestBinding> {
+public class TestActivity extends TitleBarActivity<ActivityTestBinding> {
 
 }

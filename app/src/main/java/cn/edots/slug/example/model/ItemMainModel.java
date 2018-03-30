@@ -7,6 +7,7 @@ import cn.edots.slug.example.controller.Test02Controller;
 import cn.edots.slug.example.databinding.ItemMainListBinding;
 import cn.edots.slug.example.ui.MainActivity;
 import cn.edots.slug.example.ui.TestActivity;
+import cn.edots.slug.example.ui.TestFragmentActivity;
 import cn.edots.slug.model.Holdable;
 import cn.edots.slug.model.Protocol;
 import cn.edots.slug.ui.adapter.RecyclerViewAdapter;
@@ -33,6 +34,9 @@ public class ItemMainModel implements Holdable<ItemMainListBinding> {
                         break;
                     case 1:
                         ((MainActivity) holder.getContext()).startActivity(TestActivity.class, new Protocol(Test02Controller.class));
+                        break;
+                    case 2:
+                        ((MainActivity) holder.getContext()).startActivity(TestFragmentActivity.class);
                         break;
                 }
             }
